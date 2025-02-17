@@ -3,7 +3,7 @@
 require "fileutils"
 
 task :compile do
-  system "cd ext && bundle exec rake"
+  system "cd ext && bundle exec rake --trace"
 end
 
 task test: :compile do
